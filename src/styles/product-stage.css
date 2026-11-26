@@ -1,0 +1,18 @@
+/* stage — real 3D */
+.stage { position: relative; display: grid; place-items: center; perspective: 1100px; z-index: 1; cursor: grab; }
+.tilt, .product, .float, .flipper { transform-style: preserve-3d; }
+.product { width: min(520px, 38vw); aspect-ratio: 1100 / 1000; }
+.float, .flipper { position: relative; width: 100%; height: 100%; }
+.layer, .face { position: absolute; inset: 0; width: 100%; height: 100%; }
+.layer { object-fit: contain; pointer-events: none; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.face img { width: 100%; height: 100%; object-fit: contain; user-select: none;
+  filter: drop-shadow(0 1px 0 rgba(255,255,255,.35)) drop-shadow(0 30px 30px rgba(0,0,0,.28)); }
+.face.front { transform: translateZ(8px); }
+.face.back { transform: rotateY(180deg) translateZ(8px); }
+.sheen { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: soft-light;
+  background: radial-gradient(circle at var(--sx, 30%) var(--sy, 25%), rgba(255,255,255,.85), rgba(255,255,255,0) 45%),
+              linear-gradient(to bottom, transparent 60%, rgba(0,0,0,.35));
+  -webkit-mask: var(--img) center / contain no-repeat; mask: var(--img) center / contain no-repeat; }
+.shadow { position: absolute; bottom: 7%; width: 50%; height: 34px; border-radius: 50%; background: radial-gradient(rgba(0,0,0,.45), transparent 70%); filter: blur(8px); }
+.hint { position: absolute; bottom: 1%; font-size: 12px; letter-spacing: .15em; text-transform: uppercase; opacity: .6; }

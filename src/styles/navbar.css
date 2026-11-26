@@ -1,0 +1,9 @@
+/* nav */
+.nav { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; z-index: 2; }
+.logo { font-weight: 800; letter-spacing: -.02em; font-size: 20px; font-style: italic; }
+.pills { display: flex; gap: 4px; list-style: none; padding: 5px; border-radius: 99px; background: rgba(255,255,255,.22); backdrop-filter: blur(10px); }
+.pills li { padding: 8px 16px; border-radius: 99px; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .3s, color .3s; }
+.pills li.on { background: currentColor; }
+.pills li.on { background: var(--accent); color: #fff; }
+.cart { font-weight: 600; font-size: 14px; display: flex; gap: 8px; align-items: center; }
+.cart-count { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 12px; }

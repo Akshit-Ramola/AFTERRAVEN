@@ -1,0 +1,8 @@
+/* Single entry point: imports every stylesheet in order */
+@import "./global.css";
+@import "./navbar.css";
+@import "./product-info.css";
+@import "./product-stage.css";
+@import "./price-panel.css";
+@import "./footer.css";
+@import "./responsive.css";

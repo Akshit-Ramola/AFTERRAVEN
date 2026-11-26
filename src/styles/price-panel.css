@@ -1,0 +1,9 @@
+/* right */
+.right { align-self: center; justify-self: end; text-align: right; z-index: 2; }
+.price { font-size: 38px; font-weight: 800; }
+.mrp { text-decoration: line-through; opacity: .55; margin-bottom: 30px; }
+.size-label { font-size: 12px; opacity: .7; margin-bottom: 10px; }
+.sizes { display: flex; gap: 8px; justify-content: flex-end; }
+.sizes button { width: 40px; height: 40px; border-radius: 50%; font-size: 13px; font-weight: 600; background: rgba(0,0,0,.18); transition: all .25s; }
+.sizes button:hover { transform: translateY(-3px); }
+.sizes button.on { background: #fff; color: #111; box-shadow: 0 6px 18px -6px rgba(0,0,0,.5); }

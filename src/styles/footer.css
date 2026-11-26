@@ -1,0 +1,9 @@
+/* footer */
+.foot { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: flex-end; z-index: 2; }
+.socials { font-size: 13px; font-weight: 600; letter-spacing: .1em; }
+.tagline { text-align: center; font-size: 14px; opacity: .85; }
+.next { position: relative; width: 96px; height: 96px; border-radius: 18px; background: rgba(255,255,255,.25); backdrop-filter: blur(8px); overflow: hidden; transition: transform .35s; }
+.next img { width: 100%; height: 100%; object-fit: contain; padding: 8px; filter: drop-shadow(0 6px 8px rgba(0,0,0,.3)); transition: transform .5s; }
+.next span { position: absolute; bottom: 6px; left: 0; right: 0; font-size: 10px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.next:hover { transform: translateY(-4px); }
+.next:hover img { transform: scale(1.12) rotate(-6deg); }

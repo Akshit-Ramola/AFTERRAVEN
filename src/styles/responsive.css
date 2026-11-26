@@ -1,0 +1,9 @@
+@media (max-width: 860px) {
+  body { overflow: auto; }
+  .card { height: auto; grid-template-columns: 1fr; padding: 20px; gap: 18px; }
+  .pills { display: none; }
+  .product { width: 80vw; }
+  .right { justify-self: start; text-align: left; }
+  .sizes { justify-content: flex-start; }
+  .tagline { display: none; }
+}
